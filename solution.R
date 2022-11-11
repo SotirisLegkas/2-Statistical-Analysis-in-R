@@ -5,7 +5,7 @@ library(dplyr)
 
 #Exercise 1
 
-salary=read.table(file = "C:/Users/sotir/Desktop/Data Science/1st Semester/Probability and Statistics for Data Analysis/new HW2/assignment 2/salaries.txt", header=TRUE,sep = "")
+salary=read.table(file = "salaries.txt", header=TRUE,sep = "")
 
 #A
 malelowerlimit <- mean(salary$MALES) - qt(0.975,length(salary$MALES)-1) * sd(salary$MALES)/sqrt(length(salary$MALES))
@@ -40,7 +40,7 @@ library("readxl")
 
 #Exercise 2
 
-inq=read_excel("C:/Users/sotir/Desktop/Data Science/1st Semester/Probability and Statistics for Data Analysis/new HW2/assignment 2/inquiries.xls")
+inq=read_excel("inquiries.xls")
 
 #Create the proper dataset
 val=c(inq$News,inq$Business,inq$Sports)
